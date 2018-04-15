@@ -9,7 +9,7 @@ process.stdin.on('readable', function () {
     if (input !== null) {
         var instruction = input.toString().trim();
 
-        var reg = /sekund|seconds|sekundy/gi;
+        var reg = /^[\d]*[\s]sekund$|^[\d]*[\s]seconds$|^[\d]*[\s]sekundy$/gi;
         if (reg.test(instruction)) {
             time.print(instruction);
 
