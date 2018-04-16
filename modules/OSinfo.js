@@ -15,8 +15,8 @@ function getOSinfo() {
     console.log('System:', type);
     console.log('Release:', release);
     console.log('CPU model:', cpu);
-//    console.log('Uptime: ~', (uptime / 60).toFixed(0), 'min');
-    console.log('Uptime: ~', time.print(uptime));
+    process.stdout.write('Uptime: ~ ');
+    time.print(uptime);
     console.log('User name:', userInfo.username);
     console.log('Home dir:', userInfo.homedir);
 }

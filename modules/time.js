@@ -11,7 +11,7 @@ function setTime(current) {
     var minutes = Math.floor(seconds / (60));
     seconds = Math.floor(seconds - minutes * (60));
     if (days > 0) {
-        console.log(days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ")
+        console.log(days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ");
         } else if (hours > 0) {
         console.log(hours + " hours " + minutes + " minutes " + seconds + " seconds ")
     } else if (minutes > 0) {
